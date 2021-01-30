@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      font-family: 'Nunito', sans-serif;
+      color: #2e0647;
+    }
+
+    .navbar {
+      background-color: #f7eeff;
+      font-family: 'Nunito', sans-serif;
+
+    }
+
+    nav ul a {
+      margin: 0px 30px;
+    }
+
+    ul a:hover{
+      border-bottom: 2px solid #921aca;
+      ;
+
+    }
+    form .btn{
+      background-color:#921aca;
+    }
+     form .btn:hover{
+       transition: 0.5ms;
+      background-color: #2e0647;
+    }
+
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .evenrows {
+      background-color: #f8d5ff;
+      border-radius: 0px;
+      padding: 25px;
+      color: white;
+    }
+
+    .row {
+      color: rgb(5, 5, 5);
+      padding: 15px 20px;
+      font-size: 19px;
+      font-weight: 300;
+    }
+
+    section h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 900;
+
+    }
+
+    /* footer */
+    footer {
+      background-color: #000000cb;
+    }
+
+    footer h2 {
+      color: #490970;
+      font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    footer p {
+      color: white;
+    }
+
+    /* icons */
+    .fa {
+      padding: 5px;
+      font-size: 20px;
+      width: 35px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #2e0647;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #2e0647;
+      color: white;
+    }
+
+    .fa-google {
+      background: #2e0647;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #2e0647;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #2e0647;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #2e0647;
+      color: white;
+    }
+
+    @media(max-width:765px) {
+      .row img {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light text-capitalize fixed-top">
+      <a class="navbar-brand" href="#">MemeCraft</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">why meme?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn my-2 my-sm-0 text-light px-3" type="submit">Start From
+            Here</button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="2.jpg" alt="meme" width="1100" height="500">
+        <div class="carousel-caption text-capitalize">
+          <!-- <h3>Memes</h3> -->
+          <!-- <p>An environment for our meme community to grow.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" alt="meme" width="1100" height="500">
+        <div class="carousel-caption text-capitalize">
+          <!-- <h3>Sarcasm</h3> -->
+          <!-- <p>Reaching audience is easier than before</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="33.jpg" alt="meme" width="1100" height="500">
+        <div class="carousel-caption text-capitalize">
+          <!-- <h3>Humor</h3> -->
+          <!-- <p>A community who understand the humor.</p> -->
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!-- section -->
+  <section class="section1">
+    <div class="container-fluid">
+      <h2 class="text-center text-capitalize pt-5"><b>features</b></h2>
+      <hr class="mb-5">
+      <div class="row mb-5">
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <img src="7.png" alt="" class=" img-fluid mx-auto d-block" width="500" height="250">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 my-5 py-5 text-center">
+          <h2> <b>•Best place to display your humor
+            </b></h2>
+          <hr>
+          <p> We will provide you environment for our meme community to grow. <br>
+            Your efforts will be appreciated and we have special techniques to display your talent here.</p>
+        </div>
+      </div>
+      <div class=" row mb-5 evenrows">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center  my-5 py-5">
+          <h2><b>•Reaching audience is easier than before</b></h2>
+          <hr>
+          <p> Our special techniques will help you reach your audience. You'll experience feature that you
+            have never experienced before.</p>
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <img src="22.jpg" alt="" class="img-fluid mx-auto d-block" width="500" height="250">
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="row mb-5">
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <img src="8.jpg" alt="" class="img-fluid mx-auto d-block" width="500" height="250">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center my-5 py-5">
+          <h2><b>•A community who understand the humor</b></h2>
+          <hr>
+          <p>This community is all about memes and memers.
+          </p>
+        </div>
+      </div>
+      <div class=" row mb-5 evenrows">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center my-5 py-5">
+          <h2><b>•Explore page</b></h2>
+          <hr>
+          <p>Help new memers to reach audience
+            our explore page is all about giving in enough importance to the work of every creator out
+            there.</p>
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <img src="7.png" alt="" class="img-fluid mx-auto d-block" width="500" height="250">
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="row mb-5">
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <img src="7.png" alt="" class="img-fluid mx-auto d-block" width="500" height="250">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center my-5 py-5">
+          <h2><b>•Own you Badge</b></h2>
+          <hr>
+          <p> Badges are displayed on your profile and it shows your achivements
+            we have made a badges system that will award you with badges according to your performance and
+            your achievement in this community.</p>
+        </div>
+      </div>
+      <div class=" row mb-5 evenrows">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center my-5 py-5">
+          <h2> <b>•Made in India - Make in india </b></h2>
+          <hr>
+          <p> This is one big initiative created by us bidding Indian developers.
+
+            We will try to keep it all warm and healthy and improve with the help of you people.
+          </p>
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <img src="made.png" alt="" class="img-fluid mx-auto d-block" width="500" height="250">
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <div class="container-fluid ">
+    <div class="row p-2 text-dark">
+      <div class=" pr-5 col-lg-4 col-md-4 col-sm-12 text-capitalize text-center">
+        <h4>A place to show your humor</h4>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 text-capitalize text-center">
+        <h4>Product</h4>
+        <hr>
+        <p> Download</p>
+        <p> Why MemeCraft </p>
+        <p> Inspiration </p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 text-capitalize text-center">
+        <h4>Company</h4>
+        <hr>
+        <p> About</p>
+        <p> Jobs </p>
+        <p> Branding</h5>
+        </p>
+        <p> Newsroom </p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 text-capitalize text-center">
+        <h4>Resource</h4>
+        <hr>
+        <p>Support</p>
+        <p>Safety</p>
+        <p>Blog</p>
+        <p>Feedback</p>
+        <p>Developers</p>
+
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 text-capitalize text-center">
+        <h4>Policies</h4>
+        <hr>
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Guidelines</p>
+        <p>Acknowledgement</p>
+        <p>Licenses</p>
+      </div>
+
+    </div>
+    <hr>
+    <div class="container-fluid text-center">
+      <p class="ml-2 px-1"></p>MemeCraft©️2020-21 Make in India</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
